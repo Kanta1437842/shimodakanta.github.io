@@ -1,0 +1,12 @@
+function writeInclude(includeUrl) {
+    $.ajax({
+        url: includeUrl,
+        cache: false,
+        async: false,
+        success: function (html) {
+            document.write(html);
+        }
+    });
+}
+
+

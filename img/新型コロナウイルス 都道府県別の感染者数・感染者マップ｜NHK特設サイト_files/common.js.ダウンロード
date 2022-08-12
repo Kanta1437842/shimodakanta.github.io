@@ -1,0 +1,27 @@
+//本記続きを読むボタン動作
+function inputClick(ID){
+    var $honkiBtn = $('.honki__btn');
+    if($honkiBtn.hasClass('active')){
+        var position = $(ID).offset().top;
+        $("html,body").animate({
+            scrollTop : position - 40 //スクロール位置調整
+        }, {
+            queue : false
+        });
+    }
+}
+
+
+
+//記事の続きを読むボタン動作
+function inputClick2(ID){
+    var $honkiBtn = $('.article-more__btn');
+    if($honkiBtn.hasClass('active')){
+        var position = $(ID).offset().top;
+        $("html,body").animate({
+            scrollTop : position - 40 //スクロール位置調整
+        }, {
+            queue : false
+        });
+    }
+}
